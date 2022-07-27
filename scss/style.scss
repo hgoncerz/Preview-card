@@ -1,3 +1,27 @@
+@import "config";
 body {
-  background: red;
+  background: $main-background;
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  &__wrap {
+    background: $card-background;
+    width: 1000px;
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+
+      &__image img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
