@@ -50,7 +50,10 @@ body {
   font-weight: 700;
   letter-spacing: 1.2px;
 }
-.main__wrap__content__text p {
+.main__wrap__content__text__h1__mobile {
+  display: none;
+}
+.main__wrap__content__text__desctop {
   align-self: start;
 }
 .main__wrap__content__text__info {
@@ -63,6 +66,9 @@ body {
 .main__wrap__content__text__info p {
   font-size: 12px;
   letter-spacing: 1.4px;
+}
+.main__wrap__content__text__mobile {
+  display: none;
 }
 .main__wrap__content__image img {
   width: 100%;
@@ -82,9 +88,6 @@ body {
   .main__wrap__content__text h1 {
     font-size: 26px;
     margin-bottom: 10px;
-  }
-  .main__wrap__content__text br {
-    display: none;
   }
   .main__wrap__content__text p {
     font-size: 12px;
@@ -121,6 +124,13 @@ body {
   .main__wrap__content__text {
     text-align: center;
   }
+  .main__wrap__content__text__h1__desctop {
+    display: none;
+  }
+  .main__wrap__content__text__h1__mobile {
+    display: flex;
+    justify-self: center;
+  }
   .main__wrap__content__text p {
     margin-bottom: 10px;
   }
@@ -135,6 +145,15 @@ body {
   .main__wrap {
     width: 300px;
     min-width: 280px;
+  }
+  .main__wrap__content__text h1 {
+    font-size: 23px;
+  }
+  .main__wrap__content__text__mobile {
+    display: block;
+  }
+  .main__wrap__content__text__desctop {
+    display: none;
   }
 }
 

@@ -7,9 +7,6 @@
         font-size: 26px;
         margin-bottom: 10px;
       }
-      & br {
-        display: none;
-      }
       & p {
         font-size: 12px;
       }
@@ -52,6 +49,14 @@
         &__text {
           text-align: center;
 
+          &__h1__desctop {
+            display: none;
+          }
+          &__h1__mobile {
+            display: flex;
+            justify-self: center;
+          }
+
           & p {
             margin-bottom: 10px;
           }
@@ -78,6 +83,13 @@
       &__content__text {
         & h1 {
           //   text-indent: 10px;
+          font-size: 23px;
+        }
+        &__mobile {
+          display: block;
+        }
+        &__desctop {
+          display: none;
         }
       }
     }

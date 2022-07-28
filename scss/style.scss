@@ -36,7 +36,11 @@ body {
           letter-spacing: 1.2px;
           // margin-bottom: 10px;
         }
-        & p {
+
+        &__h1__mobile {
+          display: none;
+        }
+        &__desctop {
           align-self: start;
         }
         &__info {
@@ -51,6 +55,9 @@ body {
             font-size: 12px;
             letter-spacing: 1.4px;
           }
+        }
+        &__mobile {
+          display: none;
         }
       }
 
