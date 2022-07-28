@@ -1,6 +1,7 @@
 @import "config";
 body {
   background: $main-background;
+  font-family: "Inter", sans-serif;
 }
 
 .main {
@@ -12,8 +13,8 @@ body {
   color: white;
   &__wrap {
     background: $card-background;
-    width: 1100px;
-
+    width: 1050px;
+    border-radius: 10px;
     &__content {
       display: grid;
       grid-template-columns: repeat(2, 2fr);
@@ -21,9 +22,31 @@ body {
       &__text {
         display: grid;
         align-items: center;
-        padding: 40px;
+        padding: 50px;
         & span {
           color: $soft-violet;
+        }
+        & h1 {
+          font-size: 34px;
+          font-weight: 700;
+          letter-spacing: 1.2px;
+          // margin-bottom: 10px;
+        }
+        & p {
+          align-self: start;
+        }
+        &__info {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+
+          & h2 {
+            margin-bottom: 5px;
+          }
+
+          & p {
+            font-size: 12px;
+            letter-spacing: 1.4px;
+          }
         }
       }
 
@@ -31,6 +54,10 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 0 10px 10px 0;
+
+        filter: invert(25%) sepia(24%) saturate(1590%) hue-rotate(210deg)
+          brightness(72%) contrast(100%);
       }
     }
   }
